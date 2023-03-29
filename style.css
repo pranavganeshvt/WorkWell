@@ -1,96 +1,42 @@
-body{
-    background-color: rgb(208, 208, 208);
-}
 
-.container {
-    /*max-width: 500px;*/
-    width: 100%;
-    margin: auto;
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
-
-.col {
-    height : 100vh; 
-    background-color: #fff;
-    width: 100%;
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: #5d4954;
+    font-family: 'Poppins', sans-serif;
 }
-
-.Appname {
-    height: 100px; /*200px */
-    background-color: rgb(99, 0, 49);
-    color: #fff;
-    padding: 0 20px;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    box-shadow: rgba(0,0,0, 0.15) 1.50px 1.50px 2px;
+.logo{
+    color: rgb(226,226,226);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
 }
-
-.Appname h1 {
-    position: relative; 
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-    top: 35px; /*140px*/
-    font-size: 30pt;
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    word-spacing: 2em;
+    width: 50%;
 }
-
-.Appname button {
-    position: relative;
-    top: -33px;
-    left: 1100px;
-    color: rgb(99, 0, 49);
-    background-color: #fff;
-    font-size: 20pt;
-    border: none;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    border-radius: 50px;
-    font-weight: bold;
-}
-
-.list {
-    width: 1140px; 
-    height: 580px;
-    background-color: rgb(99, 0, 49);
-    overflow-y: scroll;
-    margin: 20px auto;
-}
-
-.reminder{
-    width: 1140px; /*420px*/
-    height: 50px; 
-    border: 1px solid #fff;
-    color: #000;
-    background-color: #fff; 
+.nav-links li{
     list-style: none;
-    line-height: 50px;
-    margin: 5px auto;
-    position: relative;
-    right: 30px;
-    display: -webkit-inline-box;
-    padding: 10px;
-    box-shadow: rgba(0,0,0, 0.15) 1.50px 1.50px 2px;
 }
 
-.text
-{
-    width: 1000px; 
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-    color: rgb(99, 0, 49);
+.nav-links a{
+    color: rgb(226,226,226);
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
 }
-
-.Check{
-    color: #fff;
-    background-color: rgb(55, 102, 255);
-    border: none;
-    width: 70px ;
-    height: 35px;
-    margin-right: 10px;
-}
-
-.Delete{
-    color: #fff;
-    background-color: red;
-    border: none;
-    width: 60px;
-    height: 35px;
-}
-
+.content{
+        margin: auto;
+        width: 50%;
+        padding: 10px;
+      }
