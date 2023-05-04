@@ -2,9 +2,11 @@
     session_start();
 
     include("db.php");
-    if($_SERVER['REQUEST_METHOD']=="POST"){
+    if($_SERVER['REQUEST_METHOD']=="POST")
         $gmail = $_POST['email'];
         $password = $_POST['pass'];
+        $mail = $gmail;
+        $_SESSION['user_name'] = $mail;
 
         if(!empty($gmail) && !empty($password) && !is_numeric($gmail)){
 
@@ -15,7 +17,7 @@
                 if($result && mysqli_num_rows($result)>0){
                     $user_data = mysqli_fetch_assoc($result);
                     if($user_data['password']==$password){
-                        header("location:index.php");
+                        header("location:menu.php");
                         die;
                     }
                 }
@@ -25,7 +27,6 @@
         else{
             echo "<script type='text/javascript'> alert('Wrong username or password')</script>";
         }
-    }
     ?>
 
 
