@@ -16,6 +16,7 @@
             mysqli_stmt_bind_param($stmt, "sssss", $firstname,$lastname,$teamname,$gmail,$password);
             mysqli_stmt_execute($stmt);
             echo "<script type='text/javascript'> alert('Succesfully Registered')</script>" ;
+            header("location:main.html");
             
         }
         else{
