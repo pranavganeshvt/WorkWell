@@ -23,7 +23,7 @@ $con->close(); ?>
         <link rel="stylesheet" href="index.css">
         <style>
             body{
-                background-image: url('/images/beachreminder.png');
+                background-image: url('images/beachreminder.png');
                 background-position: center center;
                 background-repeat: no-repeat;
                 background-size: contain;
@@ -38,8 +38,8 @@ $con->close(); ?>
                 <img src="images/logo.jpeg" class="logo">
                 <h3 style="color:bisque">W O R K W E L L</h3>
                 <ul class="nav-links">
-                    <li><a href="index.html">Reminders</a></li>
-                    <li><a href="Breaks.html">Breaks/Ergonomics</a></li>
+                    <li><a href="index.php">Reminders</a></li>
+                    <li><a href="Breaks.php">Breaks/Ergonomics</a></li>
                 </ul>
                 <img src="images/profile.png" class="user-pic" onclick="toggleMenu()">
                 <div class="sub-menu-wrap" id="subMenu">
@@ -59,7 +59,7 @@ $con->close(); ?>
                                 <img src="images/help.png">
                                 <p>Help</p>
                                 <span>></span>
-                        <a href="/loggedout.html" class="sub-menu-link">
+                        <a href="loggedout.html" class="sub-menu-link">
                             <img src="images/logout1.png">
                             <p>Logout</p>
                             <span>></span>
