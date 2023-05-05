@@ -87,7 +87,7 @@
                             <img src="images/editprofile1.png">
                             <p>Edit Profile</p>
                             <span>></span>
-                            <a href="#" class="sub-menu-link">
+                            <a href="help.html" class="sub-menu-link">
                                 <img src="images/help.png">
                                 <p>Help</p>
                                 <span>></span>
