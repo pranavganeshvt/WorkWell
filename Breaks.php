@@ -17,21 +17,12 @@
         <title>Breaks</title>
         <style>
             html { 
-  background: url(images/doglappy.png) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-            /* body{
-                background-image: url('images/doglappy.png');
-                background-position: center center;
-                background-repeat: no-repeat;
-                background-size: contain;
-                width: 100vw;
-                height: 100vh;
-            } */
-
+            background: url(images/doglappy.png) no-repeat center center fixed; 
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            }
             h1{
 
                 color: #6845a0;

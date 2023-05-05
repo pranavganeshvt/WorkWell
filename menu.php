@@ -18,12 +18,22 @@
         rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
         <title>Profile</title>
+        <style>
+            html { 
+            background: url(images/main1.jpeg) no-repeat center center fixed; 
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            display: block;
+            }
+        </style>
     </head>
     <body> 
         <div class="hero">
             <nav>
-                <img src="images/logo.jpeg" class="logo">
-                <h3 style="color:bisque">W O R K W E L L</h3>
+                <img src="images/logo.jpeg" class="logo"><br>
+                <h3 style="color:bisque">WORKWELL</h3>
                 <ul class="nav-links">
                     <li><a href="index.php">Reminders</a></li>
                     <li><a href="Breaks.php">Breaks/Ergonomics</a></li>
@@ -61,14 +71,12 @@
     <!-- Additional required wrapper -->
     <div class="swiper-wrapper">
       <!-- Slides -->
-      <div class="swiper-slide"><img src="images/lappy.jpeg"></div>
       <div class="swiper-slide"><img src="images/timer.jpeg"></div>
       <div class="swiper-slide"><img src="images/todo.webp"></div>
-      <div class="swiper-slide"><img src="images/todo2.jpeg"></div>
-      <div class="swiper-slide"><img src="images/break.webp"></div>
       <div class="swiper-slide"><img src="images/erg.jpeg"></div>
+      <div class="swiper-slide"><img src="images/break.webp"></div>
+      <div class="swiper-slide"><img src="images/todo2.jpeg"></div>
       <div class="swiper-slide"><img src="images/erg 3.jpeg"></div>
-      <div class="centered"><h1>Stay Updated using our workspace</h1></div>
     </div>
     <!-- If we need pagination -->
     <div class="swiper-pagination">
@@ -79,7 +87,6 @@
     <!-- If we need navigation buttons -->
     <div class="swiper-button-prev"></div>
     <div class="swiper-button-next"></div>
-
         </div>
         <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
         <script>
@@ -106,10 +113,11 @@
 
   
 });
-        let subMenu =document.getElementById("subMenu");
-        function toggleMenu(){
-            subMenu.classList.toggle("open-menu");
-        }
+      //navigation
+let subMenu =document.getElementById("subMenu");
+    function toggleMenu(){
+    subMenu.classList.toggle("open-menu");
+}
         </script>
     </body>
 </html>

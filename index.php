@@ -22,21 +22,20 @@ $con->close(); ?>
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="index.css">
         <style>
-            body{
-                background-image: url('images/beachreminder.png');
-                background-position: center center;
-                background-repeat: no-repeat;
-                background-size: contain;
-                width: 100vw;
-                height: 100vh;
-            }
+            html { 
+                background: url(images/beachreminder.png) no-repeat center center fixed; 
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+}
         </style>
     </head>
     <body>
         <div class="hero">
-            <nav> 
-                <img src="images/logo.jpeg" class="logo">
-                <h3 style="color:bisque">W O R K W E L L</h3>
+            <nav>
+                <img src="images/logo.jpeg" class="logo"><br>
+                <h3 style="color:bisque">WORKWELL</h3>
                 <ul class="nav-links">
                     <li><a href="index.php">Reminders</a></li>
                     <li><a href="Breaks.php">Breaks/Ergonomics</a></li>
@@ -67,8 +66,8 @@ $con->close(); ?>
                     </div>
                 </div>
             </nav>
-        </div>  
-    <div class = "container">
+        </div>
+        <div class = "container">
         <div class = "col">
             <div class = "Appname">
                 <h1> My Reminders</h1>

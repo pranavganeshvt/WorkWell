@@ -35,9 +35,10 @@
     background-color: #fff;
     font-size: 20pt;
     border: none;
+    orientation: center;
     width: 40px;
     height: 40px;
-    line-height: 40px;
+    line-height: 20px;
     border-radius: 50px;
 }
 
@@ -50,7 +51,7 @@
 }
 
 .reminder{
-    width: 1175px; /*420px*/
+    width: 1200px; /*420px*/
     height: 60px; 
     border: 1px solid rgb(200, 201, 195);
     color: #000;
