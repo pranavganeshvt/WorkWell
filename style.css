@@ -13,7 +13,8 @@
     color: #525252;
     text-transform: uppercase;
     letter-spacing: 5px;
-    font-size: 20px;
+    justify-content: space-around;
+    font-size: 15px;
 }
 nav{
     background: #1a1a1a;
@@ -25,7 +26,8 @@ nav{
     position: relative;
 }
 .logo{
-    width: 40px;
+    width: 30px;
+    justify-content: space-around;
 } 
 .user-pic{
     width: 40px;
@@ -60,8 +62,8 @@ nav ul li{
 }
 .sub-menu{
     background: #fff;
-    padding: 20px;
-    margin: 10px;
+    padding: 10px;
+    margin: 20px;
 }
 .user-info{
     display: flex;
@@ -78,7 +80,7 @@ nav ul li{
 .sub-menu hr{
     border: 0;
     height: 1px;
-    width: 100%;
+    width: 100%; 
     background: #ccc;
     margin: 15px 0 10px;
 }
@@ -114,7 +116,7 @@ nav ul li{
     display: flex;
     justify-content: space-around;
     word-spacing: 2em;
-    width: 50%;
+    width: 100%;
 }
 .nav-links li{
     list-style: none;
@@ -132,3 +134,224 @@ nav ul li{
         width: 50%;
         padding: 10px;
       }
+      .circle {
+        background: gold;
+        width: 40px; 
+        height: 40px;
+        border-radius: 50%;
+        display: flex; /* or inline-flex */
+        align-items: center; 
+        justify-content: center;
+      }
+      .container{
+        width: 120%;
+        height: 100vh;
+        /* background: #222; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+    }
+    .swiper{
+        width: 85%;
+        height: fit-content;
+    }
+    .swiper-slide img{
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 100vw;
+        height: 100vh;
+    }
+    body{
+        overflow: hidden;
+    
+    }
+    .centered{
+        position: absolute;
+      top: 50%;
+      left: 75%;
+      transform: translate(-50%, -50%);
+    }
+    .h1{
+        font-family: "Lucida Console", "Courier New", monospace;
+        color: white;
+    }
+    .popup{
+        width: 400px;
+        background: #fff;
+        border-radius: 6px;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0.1); 
+        text-align: center;
+        padding: 0 30px 30px;
+        color: #333;
+        visibility: hidden;
+        transition: transform 0.4s, top 0.4s;
+    }
+    .open-popup{
+        visibility: visible;
+        top: 50%;
+        transform: translate(-50%, -50%) scale(1);    
+    }
+    .popup img{
+        width: 100px;
+        margin-top: -50px;
+        border-radius: 50%;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+    .popup h2{
+        font-size: 38px;
+        font-weight: 500;
+        margin: 30px 0 10px;
+    }
+    .popup button{
+        width: 50%;
+        margin-top: 50px;
+        padding: 10px 0;
+        background: #6845a0;
+        color: #fff;
+        border: 0;
+        outline: none;
+        font-size: 18px;
+        border-radius: 4px;
+        cursor: pointer;
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .popups{
+        width: 400px;
+        background: #fff;
+        border-radius: 6px;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0.1); 
+        text-align: center;
+        padding: 0 30px 30px;
+        color: #333;
+        visibility: hidden;
+        transition: transform 0.4s, top 0.4s;
+    }
+    .open-popups{
+        visibility: visible;
+        top: 50%;
+        transform: translate(-50%, -50%) scale(1);    
+    }
+    .popups img{
+        width: 100px;
+        margin-top: -50px;
+        border-radius: 50%;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+    .popups h2{
+        font-size: 38px;
+        font-weight: 500;
+        margin: 30px 0 10px;
+    }
+    .popups button{
+        width: 50%;
+        margin-top: 50px;
+        padding: 10px 0;
+        background: #6845a0;
+        color: #fff;
+        border: 0;
+        outline: none;
+        font-size: 18px;
+        border-radius: 4px;
+        cursor: pointer;
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    }
+    .popupr{
+        width: 400px;
+        background: #fff;
+        border-radius: 6px;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0.1); 
+        text-align: center;
+        padding: 0 30px 30px;
+        color: #333;
+        visibility: hidden;
+        transition: transform 0.4s, top 0.4s;
+    }
+    .open-popupr{
+        visibility: visible;
+        top: 50%;
+        transform: translate(-50%, -50%) scale(1);    
+    }
+    .popupr img{
+        width: 100px;
+        margin-top: -50px;
+        border-radius: 50%;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+    .popupr h2{
+        font-size: 38px;
+        font-weight: 500;
+        margin: 30px 0 10px;
+    }
+    .popupr button{
+        width: 50%;
+        margin-top: 50px;
+        padding: 10px 0;
+        background: #6845a0;
+        color: #fff;
+        border: 0;
+        outline: none;
+        font-size: 18px;
+        border-radius: 4px;
+        cursor: pointer;
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    }
+    .popupw{
+        width: 400px;
+        background: #fff;
+        border-radius: 6px;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0.1); 
+        text-align: center;
+        padding: 0 30px 30px;
+        color: #333;
+        visibility: hidden;
+        transition: transform 0.4s, top 0.4s;
+    }
+    .open-popupw{
+        visibility: visible;
+        top: 50%;
+        transform: translate(-50%, -50%) scale(1);    
+    }
+    .popupw img{
+        width: 100px;
+        margin-top: -50px;
+        border-radius: 50%;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+    .popupw h2{
+        font-size: 38px;
+        font-weight: 500;
+        margin: 30px 0 10px;
+    }
+    .popupw button{
+        width: 50%;
+        margin-top: 50px;
+        padding: 10px 0;
+        background: #6845a0;
+        color: #fff;
+        border: 0;
+        outline: none;
+        font-size: 18px;
+        border-radius: 4px;
+        cursor: pointer;
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    }
+    .timertext h1{
+        margin-left: 40%;
+
+    }
+    
