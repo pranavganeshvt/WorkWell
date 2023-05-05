@@ -7,7 +7,7 @@
 
 WorkWell is a focus application that is aimed at improving software engineer’s focus and productivity. The core functionality of this application is to set reminders for users for day-to-day tasks and set a break timer to prevent exhaustion and burnout. 
 
-**2. Names of Team Members, Github Username and VT ID
+**2. Names of Team Members, Github Username and VT ID**
 
 Team Name: **Software Sages** 
 
@@ -63,7 +63,7 @@ Note: XAMPP will open Then click on ‘Manage Servers.’
 
 Step 9: Click MySQL Database and start the server by clicking the ‘Start’ button.
 
-Setup Table for MySQL:
+**Setup Table for MySQL:**
 
 Step 1: Once the local setup is done, navigate to the url: http://localhost/phpmyadmin/index.php
 
@@ -126,7 +126,7 @@ The user should be able to sign up in the application on the home page and post 
  7) After signing in, the user will be able to see a navigation bar on the top\. The user needs to select breaks and ergonomics\. 
  8) Text field will appear, asking the user how many minutes he is willing to take a break periodically\. Users can enter the value in minutes (30, 60, etc) 
 
-\9) Timer will run for the set time, and after post-timer expiry, the user will get a pop-up to take a break and will be given a few ergonomic exercises to try\. 
+ 9) Timer will run for the set time, and after post-timer expiry, the user will get a pop-up to take a break and will be given a few ergonomic exercises to try\. 
 
 **6.2 Expected Outcome:** 
 
