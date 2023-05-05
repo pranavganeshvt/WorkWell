@@ -35,12 +35,25 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width-device-width,initial-scale-1">
-        <title>Form Login and Register</title>
+        <title>Login</title>
         <link rel="stylesheet" href="style_auth.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+        <style>
+            html { 
+  background: url(images/signup.webp) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+h1{
+    font-weight:bold;
+}
+        </style>
     </head>
     <body>
         <div class="login">
-            <h1>Login</h1>
+            <h1 style="color: #1cbf9b" >Login</h1>
             <form method="POST">
                 <label>Email</label>
                 <input type = "email" name="email" required>

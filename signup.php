@@ -30,15 +30,23 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width-device-width,initial-scale-1">
         <title>Form Login and Register</title>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style_auth.css">
     </head>
+    <style>
+       html { 
+  background: url(images/signup.webp) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+    </style>
     <body>
-        <img src="background.PNG">
         <div id="page-wrap">
         </div>
         <div class="signup">
-            <h1>Sign Up</h1>
-            <h4>It's free and only takes a minute</h4>
+            <h1 style="color: #1cbf9b;">Sign Up</h1>
             <form method="POST">
                 <label>First Name</label>
                 <input type = "text" name="fname" required>
@@ -53,8 +61,8 @@
                 <input type="submit" name="" value="Submit">
             </form>
             <p>By clicking the Sign Up button, you agree to our<br>
-            <a href="">Terms and Condition</a>
-        and <a href="#">Policy Privacy</a>
+            <a>Terms and Condition</a>
+        and <a>Policy Privacy</a>
             </p>
             <p>
                 Already have an account? <a href="login.php">Login Here</a>

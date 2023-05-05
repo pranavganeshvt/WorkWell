@@ -34,7 +34,7 @@
                         <div class="user-info">
                             <img src="images/profile.png" alt="profile pic">
                             <h5>
-                            <?php echo $user_data['fname'];?> &nbsp; <?php echo $user_data['lname']; ?>
+                                <?php echo $user_data['fname'];?> &nbsp; <?php echo $user_data['lname']; ?>
                             </h5>
                         </div>
                         <hr>
@@ -69,17 +69,17 @@
       <div class="swiper-slide"><img src="images/erg.jpeg"></div>
       <div class="swiper-slide"><img src="images/erg 3.jpeg"></div>
       <div class="centered"><h1>Stay Updated using our workspace</h1></div>
-       
     </div>
     <!-- If we need pagination -->
     <div class="swiper-pagination">
-        
+
+
     </div>
   
     <!-- If we need navigation buttons -->
     <div class="swiper-button-prev"></div>
     <div class="swiper-button-next"></div>
-    
+
         </div>
         <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
         <script>
@@ -103,8 +103,8 @@
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
-  
 
+  
 });
         let subMenu =document.getElementById("subMenu");
         function toggleMenu(){
