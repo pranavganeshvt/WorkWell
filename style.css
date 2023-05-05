@@ -131,9 +131,9 @@ nav ul li{
     font-size: 14px;
 }
 .content{
-        margin: auto;
-        width: 50%;
-        padding: 10px;
+        margin-left:40%;
+        width: 60%;
+        padding: 40px;
       }
       .circle {
         background: gold;

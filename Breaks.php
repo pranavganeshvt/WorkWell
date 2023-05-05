@@ -16,32 +16,41 @@
         <link rel="stylesheet" href="style.css">
         <title>Breaks</title>
         <style>
-            body{
+            html { 
+  background: url(images/doglappy.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+            /* body{
                 background-image: url('images/doglappy.png');
                 background-position: center center;
                 background-repeat: no-repeat;
                 background-size: contain;
                 width: 100vw;
                 height: 100vh;
-            }
+            } */
 
             h1{
 
                 color: #6845a0;
                 margin-left: 40px;
+                font-weight: bold;
                 
             }
             input[type=text], select {
-            width: 25%;
+            width: 35%;
             padding: 12px 20px;
             margin: 16px 0;
             display: inline-block;
             border-radius: 4px;
             box-sizing: border-box;
+            margin-left: 40px;
             }
 
             input[type=submit] {
-            width: 10%;
+            width: 15%;
             background-color: #6845a0;
             color: white;
             padding: 14px 20px;
@@ -49,6 +58,7 @@
             border: none;
             border-radius: 4px;
             cursor: pointer;
+            align-items: center;
             }
 
             input[type=submit]:hover {
@@ -101,10 +111,8 @@
             </nav>
         </div>
         <div class="content">
-        </div>
-        <div>
-            <input type="text" id="breakfrq" placeholder="Enter break frequency(minutes)"><br><br>
-            <input type="submit" id="submit" value="submit" onclick="getTime()">
+                <input type="text" id="breakfrq" placeholder="Enter break frequency(minutes)"><br><br>
+                <input type="submit" id="submit" value="submit" onclick="getTime()">
         </div>
         <div class="timertext">
            <h1>Next Break in <span id="time">{timefrq}</span> minutes!</h1> 
