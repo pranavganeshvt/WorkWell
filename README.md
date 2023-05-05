@@ -3,13 +3,13 @@
 **Add one image of the project live**
 
 
-**1.** **Application Description:** 
+**1.Application Description:** 
 
 WorkWell is a focus application that is aimed at improving software engineer’s focus and productivity. The core functionality of this application is to set reminders for users for day-to-day tasks and set a break timer to prevent exhaustion and burnout. 
 
 **2. Names of Team Members, Github Username and VT ID
 
-Team Name: Software Sages** 
+Team Name: **Software Sages** 
 
 |S.No|Member Name|Github Username|VT ID|
 | :- | :- | :- | :- |
@@ -95,10 +95,12 @@ Step 5: Reminders: Reminders serve as a prompt or notification to help users rem
 Step 6: Breaks: Users will be prompted to take regular breaks from work which would lead to better work-life balance and reduce burnout in the longer run.
 
 Step 7: Ergonomics: Users have a chance to take care of their physical and mental health as they would be able to get ergonomic images on how to take care of their posture.
+
+
 **5. Instructions on how to run the tests:**
 
-Preconditions:** 
-1\.** User needs to clone the repository.
+**Preconditions:** 
+1\. User needs to clone the repository.
 
 2\. Users need to follow installation procedures on the main page for running PHP Server.
 
@@ -114,23 +116,23 @@ The user should be able to sign up in the application on the home page and post 
 
 **6.1 Instructions:** 
 
-\1) Place the project folder into /Applications/XAMPP/xamppfiles/htdocs
+ 1) Place the project folder into /Applications/XAMPP/xamppfiles/htdocs
 
-\2) Clone the repository into the local folder using the command: git clone <https://github\.com/pranavganeshvt/WorkWell>
-\3) After cloning the repository, use the local cloned folder and open it in the editor of your choice (VSCode, etc)\. 
-\4) Open the home\.html file and run it after following the instructions for the installation listed above\. 
-\5) After this, there will be a page loaded on localhost that will ask for login and signup\. 
-\6) Click on the Signup button, enter user details, and register\. The user will be redirected to the home page\. Users can now sign in using these credentials\. 
-\7) After signing in, the user will be able to see a navigation bar on the top\. The user needs to select breaks and ergonomics\. 
-\8) Text field will appear, asking the user how many minutes he is willing to take a break periodically\. Users can enter the value in minutes (30, 60, etc) 
+ 2) Clone the repository into the local folder using the command: git clone <https://github\.com/pranavganeshvt/WorkWell>
+ 3) After cloning the repository, use the local cloned folder and open it in the editor of your choice (VSCode, etc)\. 
+ 4) Open the home\.html file and run it after following the instructions for the installation listed above\. 
+ 5) After this, there will be a page loaded on localhost that will ask for login and signup\. 
+ 6) Click on the Signup button, enter user details, and register\. The user will be redirected to the home page\. Users can now sign in using these credentials\. 
+ 7) After signing in, the user will be able to see a navigation bar on the top\. The user needs to select breaks and ergonomics\. 
+ 8) Text field will appear, asking the user how many minutes he is willing to take a break periodically\. Users can enter the value in minutes (30, 60, etc) 
 
 \9) Timer will run for the set time, and after post-timer expiry, the user will get a pop-up to take a break and will be given a few ergonomic exercises to try\. 
 
 **6.2 Expected Outcome:** 
 
-\1) User will enter the time after which he wants to take a break\. 
-\2) Timer needs to run for the duration set\. 
-\3) After the timer expires, the user should get prompts to take a break and perform ergonomic exercises\. 
+ 1) User will enter the time after which he wants to take a break\. 
+ 2) Timer needs to run for the duration set\. 
+ 3) After the timer expires, the user should get prompts to take a break and perform ergonomic exercises\. 
 
 **7. Contradictions between readme and project report:**
 No contradictions or changes between the project report and repository to the best of our knowledge. 
