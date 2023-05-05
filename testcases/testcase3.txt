@@ -1,9 +1,7 @@
-Test Id: BT 03 
-Breaks setup
+Test Id: BT 03 Breaks setup
 
 Preconditions:
-User is logged into the WorkWell 
-application.
+User is logged into the WorkWell application.
 
 Description: 
 Steps:
@@ -13,5 +11,7 @@ Steps:
 4.User clicks on the submit button
 
 Results:
-User should see the timer running with entered 
-amount of time on the screen."
+User should see the timer running with entered amount of time on the screen and post which user will get a pop-up to take a break. 
+
+Functionality: 
+Internal breaks functionality can be verified using this test case. 
