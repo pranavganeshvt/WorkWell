@@ -1,0 +1,20 @@
+Test Id: BT01
+Login Test  
+
+Preconditions:
+User account has been signed up 
+into the WorkWell application
+
+Description:
+
+Steps:
+1. Opens login Page
+2. Enters Username and password
+3.Clicks login"	"If the login credentials are correct then 
+the user will be able to login into WorkWell
+
+Result:
+
+if the login credentials are incorrect then
+the user will not be able to login into WorkWell
+will see login failed message."

@@ -1,0 +1,17 @@
+Test Id: BT 03 
+Breaks setup
+
+Preconditions:
+User is logged into the WorkWell 
+application.
+
+Description: 
+Steps:
+1.User navigates to the Breaks tab
+2.User enters the break frequency
+3.User enters the break length
+4.User clicks on the submit button
+
+Results:
+User should see the timer running with entered 
+amount of time on the screen."
