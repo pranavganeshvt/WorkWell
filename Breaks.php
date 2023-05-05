@@ -6,7 +6,6 @@
     $result = mysqli_query($con, $query);
     $user_data = mysqli_fetch_assoc($result);
     ?>
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -18,7 +17,7 @@
         <title>Breaks</title>
         <style>
             body{
-                background-image: url('/images/doglappy.png');
+                background-image: url('images/doglappy.png');
                 background-position: center center;
                 background-repeat: no-repeat;
                 background-size: contain;
@@ -92,7 +91,7 @@
                                 <img src="images/help.png">
                                 <p>Help</p>
                                 <span>></span>
-                        <a href="#" class="sub-menu-link">
+                        <a href="loggedout.html" class="sub-menu-link">
                             <img src="images/logout1.png">
                             <p>Logout</p>
                             <span>></span>

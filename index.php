@@ -21,6 +21,16 @@ $con->close(); ?>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="index.css">
+        <style>
+            body{
+                background-image: url('/images/beachreminder.png');
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                width: 100vw;
+                height: 100vh;
+            }
+        </style>
     </head>
     <body>
         <div class="hero">
@@ -29,8 +39,7 @@ $con->close(); ?>
                 <h3 style="color:bisque">W O R K W E L L</h3>
                 <ul class="nav-links">
                     <li><a href="index.html">Reminders</a></li>
-                    <li><a href="Ergonomics.html">Ergonomics</a></li>
-                    <li><a href="Breaks.html">Breaks</a></li>
+                    <li><a href="Breaks.html">Breaks/Ergonomics</a></li>
                 </ul>
                 <img src="images/profile.png" class="user-pic" onclick="toggleMenu()">
                 <div class="sub-menu-wrap" id="subMenu">
@@ -45,6 +54,7 @@ $con->close(); ?>
                         <a href="#" class="sub-menu-link">
                             <img src="images/editprofile1.png">
                             <p>Edit Profile</p>
+                            <span>></span>
                             <a href="#" class="sub-menu-link">
                                 <img src="images/help.png">
                                 <p>Help</p>
@@ -65,96 +75,16 @@ $con->close(); ?>
                 <button id="newReminder"> +</button>
             </div>
                 <ul class = "list">
-                    <p input type = "hidden"  id="content-holder"></p>
-                    
+
                 </ul>
         </div>
     </div>
-</script>
-<script type="text/javascript">
-    const list = document.getElementsByClassName("list")[0];
-const newReminder = document.getElementById("newReminder");
-
-
-function createReminder(id, message)
-{
-    if(!message && message.length > 50)
-    {
-        alert("Reminder too long, please reduce size");
-        return;
-    }
-    else if (!message)
-    {
-        alert("Enter a reminder");
-        return;
-    }
-    
-    const li = document.createElement("li");
-    li.id = id;
-    li.className = "reminder"
-    const div = document.createElement("div");
-    div.className = "text";
-    div.innerText = message;
-
-var contentHolder = []
-contentHolder = document.getElementById('content-holder');
-var a = [];
-contentHolder.innerHTML += `${message},`;
-a.push(contentHolder.innerHTML)
-console.log(contentHolder.innerHTML);
-console.log(a);
-document.cookie = "cname=" + a;
-
-    const actionContainer = document.createElement("div");
-    actionContainer.className = "actions";
-
-    const Check  = document.createElement("button");
-    Check.className = "Check";
-    Check.innerText = "Finish";
-
-    const Delete = document.createElement("button");
-    Delete.className = "Delete";
-    Delete.innerText = "Delete"
-
-    actionContainer.appendChild(Check);
-    actionContainer.appendChild(Delete);
-    
-    Check.addEventListener("click", function()
-    {
-        if(li.id == id)
-        {
-            div.style.textDecoration = "line-through";
-        }
-    });
-
-    Delete.addEventListener("click", function()
-    {
-        if(li.id == id) {
-            list.removeChild(li);
-        }
-    });
-    li.appendChild(div);
-    li.appendChild(actionContainer);
-
-    return li;
-}
-
-newReminder.addEventListener("click", function ()
-{
-    let message = prompt("Please enter a Reminder");
-    let id = Math.floor(Math.random() *100);
-    let reminder = createReminder(id, message);
-    list.appendChild(reminder);
-    
-});
-
-</script>
     <script>
         let subMenu =document.getElementById("subMenu");
         function toggleMenu(){
             subMenu.classList.toggle("open-menu");
         }
     </script>
-     <!---  <script src="index.js" async defer></script> -->
+        <script src="index.js" async defer></script>
     </body>
  </html>
