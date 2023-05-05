@@ -100,6 +100,7 @@ Step 7: Ergonomics: Users have a chance to take care of their physical and menta
 **5. Instructions on how to run the tests:**
 
 **Preconditions:** 
+
 1\. User needs to clone the repository.
 
 2\. Users need to follow installation procedures on the main page for running PHP Server.
@@ -117,7 +118,6 @@ The user should be able to sign up in the application on the home page and post 
 **6.1 Instructions:** 
 
  1) Place the project folder into /Applications/XAMPP/xamppfiles/htdocs
-
  2) Clone the repository into the local folder using the command: git clone <https://github\.com/pranavganeshvt/WorkWell>
  3) After cloning the repository, use the local cloned folder and open it in the editor of your choice (VSCode, etc)\. 
  4) Open the home\.html file and run it after following the instructions for the installation listed above\. 
