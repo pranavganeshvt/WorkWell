@@ -24,6 +24,7 @@ nav{
     justify-content: space-around;
     align-items: center;
     position: relative;
+    margin-bottom: 5px;
 }
 .logo{
     width: 30px;

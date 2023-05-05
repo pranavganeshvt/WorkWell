@@ -57,7 +57,7 @@
 
             div {
             border-radius: 5px;
-            padding: 20px;
+            padding: 0px;
             }
             
         </style>
