@@ -1,10 +1,16 @@
-Test Id: BT02  Reminders setup Test  
-Preconditions: User is logged into the WorkWell  application 
+Test Id: BT02  Reminders setup Test
+Preconditions: User is logged into the WorkWell application
 
 Description:
 
-1. Clicks on the reminders tab 2.User clicks on the ' + ' icon 3.User enter the desired reminder 4.User clicks on the submit
+1. Clicks on the reminders tab
+2. User clicks on the ' + ' icon
+3. User enter the desired reminder
+4. User clicks on the submit
+5. User should be able to see the reminder he entered on the screen. 
 
-Results
+Results: 
+User should see the reminder setup under the reminders tab. Users will be able to perform two actions one is to finish a task if completed and the other is to delete the reminder if needed.
 
-User should see the reminder setup under the  reminders tab. users will be able to perform two  actions one is to finish a task if completed and  the other is to delete the reminder if needed.
+Functionality: 
+Add/Delete Reminders Functionality can be verified using this test case. 
