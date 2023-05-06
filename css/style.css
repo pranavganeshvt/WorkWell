@@ -1,4 +1,4 @@
-
+/* Styling all the HTML components in the respective signin and login pages */
 *{
     margin: 0;
     padding: 0;
@@ -6,10 +6,6 @@
     box-sizing: border-box;
 }
 .hero{
-    /* width: 100%;
-    min-height: 100vh;
-    background: #eceaff;
-    color: #525252; */
     color: #525252;
     text-transform: uppercase;
     letter-spacing: 5px;
