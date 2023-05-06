@@ -1,7 +1,7 @@
 <?php
     session_start();
 
-    include("db.php");
+    include("../php/db.php");
     if($_SERVER['REQUEST_METHOD']=="POST")
         $gmail = $_POST['email'];
         $password = $_POST['pass'];
@@ -17,7 +17,7 @@
                 if($result && mysqli_num_rows($result)>0){
                     $user_data = mysqli_fetch_assoc($result);
                     if($user_data['password']==$password){
-                        header("location:menu.php");
+                        header("location:../php/menu.php");
                         die;
                     }
                 }
@@ -36,11 +36,11 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width-device-width,initial-scale-1">
         <title>Login</title>
-        <link rel="stylesheet" href="style_auth.css">
+        <link rel="stylesheet" href="../css/style_auth.css">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
         <style>
             html { 
-  background: url(images/signup.webp) no-repeat center center fixed; 
+  background: url(../images/signup.webp) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -61,7 +61,7 @@ h1{
                 <input type = "password" name="pass" required>
                 <input type="submit" name="" value="Submit">
             </form>
-            <p>Don't have an account? <a href="signup.php">Sign Up here</a></p>
+            <p>Don't have an account? <a href="../php/signup.php">Sign Up here</a></p>
         </div>
     </body>
 </html>

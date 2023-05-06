@@ -1,7 +1,7 @@
 <?php
     session_start();
 
-    include("db.php");
+    include("../php/db.php");
 
     if($_SERVER['REQUEST_METHOD']=="POST"){
         $firstname = $_POST['fname'];
@@ -16,7 +16,7 @@
             mysqli_stmt_bind_param($stmt, "sssss", $firstname,$lastname,$teamname,$gmail,$password);
             mysqli_stmt_execute($stmt);
             echo "<script type='text/javascript'> alert('Succesfully Registered')</script>" ;
-            header("location:main.html");
+            header("location: ../html/home.html");
             
         }
         else{
@@ -32,11 +32,11 @@
         <meta name="viewport" content="width-device-width,initial-scale-1">
         <title>Form Login and Register</title>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="style_auth.css">
+        <link rel="stylesheet" href="../css/style_auth.css">
     </head>
     <style>
        html { 
-  background: url(images/signup.webp) no-repeat center center fixed; 
+  background: url(../images/signup.webp) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -66,7 +66,7 @@
         and <a>Policy Privacy</a>
             </p>
             <p>
-                Already have an account? <a href="login.php">Login Here</a>
+                Already have an account? <a href="../php/login.php">Login Here</a>
             </p>
         </div>
     </body>

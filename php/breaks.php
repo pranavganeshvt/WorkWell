@@ -1,6 +1,6 @@
 <?php
     session_start();
-    include("db.php");
+    include("../php/db.php");
     $mail = $_SESSION['user_name'];
     $query = "select * from form where email='$mail' limit 1";
     $result = mysqli_query($con, $query);
@@ -13,11 +13,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="../css/style.css">
         <title>Breaks</title>
         <style>
             html { 
-            background: url(images/doglappy.png) no-repeat center center fixed; 
+            background: url(../images/doglappy.png) no-repeat center center fixed; 
             -webkit-background-size: cover;
             -moz-background-size: cover;
             -o-background-size: cover;
@@ -68,29 +68,29 @@
         var timeF; </script>
         <div class="hero">
             <nav>
-                <img src="images/logo.jpeg" class="logo"><br>
+                <img src="../images/logo.jpeg" class="logo"><br>
                 <h3 style="color:bisque">WORKWELL</h3>
                 <ul class="nav-links">
-                    <li><a href="index.php">Reminders</a></li>
-                    <li><a href="Breaks.php">Breaks/Ergonomics</a></li>
+                    <li><a href="../php/index.php">Reminders</a></li>
+                    <li><a href="../php/breaks.php">Breaks/Ergonomics</a></li>
                 </ul>
-                <img src="images/profile.png" class="user-pic" onclick="toggleMenu()">
+                <img src="../images/profile.png" class="user-pic" onclick="toggleMenu()">
                 <div class="sub-menu-wrap" id="subMenu">
                     <div class="sub-menu">
                         <div class="user-info">
-                            <img src="images/profile.png" alt="profile pic">
+                            <img src="../images/profile.png" alt="profile pic">
                             <h5>
                                 <?php echo $user_data['fname'];?> &nbsp; <?php echo $user_data['lname']; ?>
                             </h5>
                         </div>
                         <hr>
                         <a href="#" class="sub-menu-link">
-                            <a href="help.html" class="sub-menu-link">
+                            <a href="../html/help.html" class="sub-menu-link">
                                 <img src="images/help.png">
                                 <p>Help</p>
                                 <span>></span>
-                        <a href="loggedout.html" class="sub-menu-link">
-                            <img src="images/logout1.png">
+                        <a href="../html/logout.html" class="sub-menu-link">
+                            <img src="../images/logout1.png">
                             <p>Logout</p>
                             <span>></span>
                         </a>
@@ -107,25 +107,25 @@
         </div>
         <div class="container">
             <div class="popup" id="popup">
-                <img src="images/bell.jpeg">
+                <img src="../images/bell.jpeg">
                 <p>You've been working so long</p>
                 <h2>It's time for a break!!</h2>
                 <button type="button" onclick="closePopup()">OK</button>
             </div>
             <div class="popups" id="popups">
-                <img src="images/stretch.png">
+                <img src="../images/stretch.png">
                 <p>It's time for some stretches</p>
                 <h2>Stretch your arms and legs</h2>
                 <button type="button" onclick="closePopups()">OK</button>
             </div>
             <div class="popupr" id="popupr">
-                <img src="images/relaxeyes.png">
+                <img src="../images/relaxeyes.png">
                 <p>Your eyes are getting strained</p>
                 <h2>Relax your eyes for a while</h2>
                 <button type="button" onclick="closePopupr()">OK</button>
             </div>
             <div class="popupw" id="popupw">
-                <img src="images/water.jpeg">
+                <img src="../images/water.jpeg">
                 <p>Stay hydrated</p>
                 <h2>Have some water</h2>
                 <button type="button" onclick="closePopupw()">OK</button>
