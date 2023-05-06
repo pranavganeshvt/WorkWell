@@ -1,15 +1,25 @@
 <?php
+    // Starting the session of the server
     session_start();
+
+    // Including the file to get connection to the database
     include("../php/db.php");
+
     $mail = $_SESSION['user_name'];
+
+    //Based on the user input of email and password, user_name will be obtained.
     $query = "select * from form where email='$mail' limit 1";
     $result = mysqli_query($con, $query);
     $user_data = mysqli_fetch_assoc($result);
     $text = $_COOKIE['cname'];
+
+    //Updatinf the database with the added reminders.
     $sql = "UPDATE form SET reminders = '$text' WHERE email='$mail'";
     $ans = mysqli_query($con, $sql);
 
-$con->close(); ?>
+    //Closing the database connection
+    $con->close(); 
+?>
 
 <!DOCTYPE html> 
  <html>
@@ -22,6 +32,7 @@ $con->close(); ?>
         <link rel="stylesheet" href="../css/style.css">
         <link rel="stylesheet" href="../css/reminders.css">
         <style>
+            /* Styling the HTML elements */
             html { 
                 background: url(../images/beachreminder.png) no-repeat center center fixed; 
                 -webkit-background-size: cover;

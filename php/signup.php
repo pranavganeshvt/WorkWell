@@ -1,6 +1,8 @@
 <?php
+    // Starting the session of the server
     session_start();
 
+    // Including the file to get connection to the database
     include("../php/db.php");
 
     if($_SERVER['REQUEST_METHOD']=="POST"){
@@ -10,6 +12,7 @@
         $gmail = $_POST['email'];
         $password = $_POST['pass'];
 
+        //The user details to signup will be entered into the database.
         if(!empty($gmail) && !empty($password) && !is_numeric($gmail)){
             $query ="INSERT INTO form (`fname`,`lname`,`teamname`,`email`,`password`) VALUES  (?,?,?,?,?)";
             $stmt = $con->prepare($query);
@@ -17,7 +20,6 @@
             mysqli_stmt_execute($stmt);
             echo "<script type='text/javascript'> alert('Succesfully Registered')</script>" ;
             header("location: ../html/home.html");
-            
         }
         else{
             echo "<script type='text/javascript'> alert('Please enter valid information')</script>"; 
@@ -35,6 +37,7 @@
         <link rel="stylesheet" href="../css/style_auth.css">
     </head>
     <style>
+        /* Styling the HTML elements */
        html { 
   background: url(../images/signup.webp) no-repeat center center fixed; 
   -webkit-background-size: cover;

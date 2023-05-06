@@ -1,11 +1,20 @@
 <?php
+    // Starting the session of the server
     session_start();
+
+    // Including the file to get connection to the database
     include("../php/db.php");
+
+    // Storing the user mail on the login page to use it for the remaining pages as a part of the session
     $mail = $_SESSION['user_name'];
+
+    // Query to fetch the user data by quering the database
     $query = "select * from form where email='$mail' limit 1";
+
     $result = mysqli_query($con, $query);
     $user_data = mysqli_fetch_assoc($result);
     ?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -16,6 +25,8 @@
         <link rel="stylesheet" href="../css/style.css">
         <title>Breaks</title>
         <style>
+            /* Styling the HTML elements */
+
             html { 
             background: url(../images/doglappy.png) no-repeat center center fixed; 
             -webkit-background-size: cover;
@@ -150,7 +161,7 @@
     }, 1000);
 }
 
-//alert popup 
+//Alert Popup 
 let popup=document.getElementById("popup");      
 function openPopup() {
     popup.classList.add("open-popup");
@@ -182,7 +193,7 @@ function getTime() {
     setInterval(openPopup, 1000*Minutes); //Then set it to run again after every certain minutes
 }
 
-//navigation
+//Navigation
 let subMenu =document.getElementById("subMenu");
     function toggleMenu(){
     subMenu.classList.toggle("open-menu");

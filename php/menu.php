@@ -1,7 +1,13 @@
 <?php
+    // Starting the session of the server
     session_start();
+
+    // Including the file to get connection to the database
     include("../php/db.php");
+
     $mail = $_SESSION['user_name'];
+
+    //Based on the user input of email and password, user_name will be obtained.
     $query = "select * from form where email='$mail' limit 1";
     $result = mysqli_query($con, $query);
     $user_data = mysqli_fetch_assoc($result);
@@ -19,6 +25,7 @@
         href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
         <title>Profile</title>
         <style>
+            /* Styling the HTML elements */
             html { 
             background: url(../images/main1.jpeg) no-repeat center center fixed; 
             -webkit-background-size: cover;
@@ -77,7 +84,6 @@
     </div>
     <!-- If we need pagination -->
     <div class="swiper-pagination">
-
 
     </div>
   

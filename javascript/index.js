@@ -3,7 +3,7 @@ const newReminder = document.getElementById("newReminder");
 
 function createReminder(id, message)
 {
-
+    //Check the length of the message
     if(!message && message.length > 50)
     {
         alert("Reminder too long, please reduce size");
@@ -11,6 +11,7 @@ function createReminder(id, message)
     }
     else if (!message)
     {
+        //Create a alert to enter the reminder.
         alert("Enter a reminder");
         return;
     }
@@ -24,10 +25,12 @@ function createReminder(id, message)
     const actionContainer = document.createElement("div");
     actionContainer.className = "actions";
 
+    // If the reminder is completed, can strike out the reminder on the page.
     const Check  = document.createElement("button");
     Check.className = "Check";
     Check.innerText = "Finish";
 
+    // If the reminder is completed, can delete the reminder from the page.
     const Delete = document.createElement("button");
     Delete.className = "Delete";
     Delete.innerText = "Delete"
@@ -55,6 +58,7 @@ function createReminder(id, message)
     return li;
 }
 
+//Adding new reminders to the Reminders page.
 newReminder.addEventListener("click", function ()
 {
     let message = prompt("Please enter a Reminder");
